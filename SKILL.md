@@ -1,6 +1,6 @@
 ---
 name: spec-dev
-description: 规范驱动开发流程（Requirements -> Architecture -> Tasks -> Implementation -> Verification）
+description: 规范驱动开发流程（Requirements -> Architecture -> Tasks -> Implementation -> Verification）。适用于新功能开发、跨模块重构、接口变更；用户明确要求时必须遵循。
 ---
 
 # Spec-Driven Development (SOP)
@@ -33,7 +33,7 @@ description: 规范驱动开发流程（Requirements -> Architecture -> Tasks ->
 
 在修改代码或 Spec 前：
 
-1. 阅读项目级 `CLAUDE.md`、相关目录规则、`README.md` 和现有开发文档；
+1. 阅读项目级 `CLAUDE.md`、`AGENTS.md`、`.cursorrules` 等规则文件、相关目录规则、`README.md` 和现有开发文档；
 2. 检查工作区状态，识别用户已有的未提交修改；
 3. 识别项目已有的测试、Lint、类型检查、构建和部署命令；
 4. 不覆盖、撤销或重置用户已有修改；
@@ -64,7 +64,7 @@ description: 规范驱动开发流程（Requirements -> Architecture -> Tasks ->
 1. 根据需求创建或复用 Spec 目录：
 
    ```text
-   docs/specs/YYYYMMDD-功能名/
+   specs/YYYYMMDD-功能名/
    ```
 
 2. 功能名必须转换为安全目录名，仅允许中文、英文、数字、`-` 和 `_`。不得包含 `/`、路径穿越字符或其他会改变目录结构的字符。
